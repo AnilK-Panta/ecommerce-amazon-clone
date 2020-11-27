@@ -96,6 +96,7 @@ body{
 /* sidebar */
 .sidebar{
     position: fixed;
+    transition: all .6s;
     transform: translateX(-270px);
     width: 250px;
     height: 100vh;
