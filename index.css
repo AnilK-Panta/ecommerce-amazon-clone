@@ -22,6 +22,9 @@ body{
     align-items: center;
     color: white;
 }
+.menu{
+    cursor: pointer;
+}
 .profile{
     list-style-type: none;
     display: flex;
@@ -87,5 +90,40 @@ body{
     align-items: center;
     justify-content: center;
     margin-top: auto;                       /* aligns on the bottom */
+
+}
+
+/* sidebar */
+.sidebar{
+    position: fixed;
+    transform: translateX(-270px);
+    width: 250px;
+    height: 100vh;
+    background-color: rgb(225, 225, 225);
+    padding-left: 20px;
+}
+.sidebar li{
+    list-style: none;
+    margin-top: 10px;
+}
+.sidebar li a{
+    text-decoration: none;
+}
+.sidebar.open{
+    transform: translateX(0);
+}
+.menu-button{
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 20px;
+    padding-top: 0px;
+    position: absolute;
+    top: 3px;
+    right: 5px;
+    background-color: rgb(255, 255, 255);
+    border-color: transparent;
 
 }

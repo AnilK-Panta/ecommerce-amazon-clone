@@ -7,16 +7,25 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div class="header">
-        <div class="logo">ECOMM</div>
-        
+    <div class="header"> 
+        <div class="logo">	
+            <span class="menu" onclick="openMenu()">&#9776; </span>        <!--hamberger menu html code -->
+            ecomm
+        </div>
             <ul class="profile">
                 <li>Card</li>
                 <li>Anil</li>
                 <li>Admin</li>
             </ul>
-        
     </div>
+    <aside class="sidebar">
+        <h3>Shopping Category</h3>
+        <button class="menu-button" onclick="closeMenu()">x</button>
+        <ul>
+            <li><a href="index.html">Pants</a></li>
+            <li><a href="index.html">Shirts</a></li>
+        </ul>
+    </aside>
     <div class="main">
         <div class="products">
             <div class="product">
@@ -64,6 +73,14 @@
     <div class="footer">
         <p>Developed with love</p>
     </div>
+    <script>
+        const openMenu=()=>{
+            document.querySelector("aside").classList.add("open");
+        }
+        const closeMenu=()=>{
+            document.querySelector(".sidebar").classList.remove("open");
+        }
+    </script>
     
 </body>
 </html>
